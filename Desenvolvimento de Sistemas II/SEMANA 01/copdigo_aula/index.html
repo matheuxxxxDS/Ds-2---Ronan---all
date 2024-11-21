@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="titulo"> Olá Mundo louco do JS!</h1>
+    <p id="frase1">Vamos aprender JS?</p>
+    <p id="frase2">Vai ser legal pra caramba!!!</p>
+
+    <input type="text" name="" id="idTag">
+    <button type="button" onclick="mudaCor()">Mudar Cor</button>
+
+
+    <script>
+        var titulo = document.getElementById("titulo");
+        alert(titulo.nodeName);
+        console.log(titulo);
+
+        function mudaCor() {
+            var idTag = document.getElementById("idTag").value;
+            var elemento = document.getElementById(idTag);
+            elemento.style.color = "#ff0000";
+            elemento.style.backgroundColor = "#000000";
+        }
+    </script>
+</body>
+
+</html>
